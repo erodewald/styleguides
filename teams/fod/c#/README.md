@@ -1,4 +1,4 @@
-# FOD Team Coding Standards
+# FOD Team C# Coding Standards
 
 Sitemap:
   * [Naming Conventions](#NamingConventions)
