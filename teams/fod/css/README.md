@@ -21,7 +21,7 @@ $main-font: Arial;
 **Do** use _snake-PascalCase\_\_double spinal\_\_PascalCase--double snake_ for class names. Esentially BEM notation with slight modification.
 
 ```css
-/* Idea here is namespace-component__subcomponent--modifier */
+/* Idea here is namespace-Component__Subcomponent--modifier */
 
 .calendar-Day__ClassName {}
 .calendar-Day__ClassName--active {}
@@ -30,7 +30,7 @@ $main-font: Arial;
 ```
 <br>
 
-**Do** use _PascalCase_ for Id selectors. These should be extremely rare.
+**Do** use _PascalCase_ for Id selectors. **These should be extremely rare**.
 
 ```css
 #ScheduleDate {}
