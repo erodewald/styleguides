@@ -53,6 +53,7 @@ $main-font: Arial;
 .namespace-Selector {}
 /* Empty line here after final selector */
 ```
+<br>
 
 **Avoid** the `#` and `*` selector.
 
@@ -120,3 +121,20 @@ $main-font: Arial;
 }
 ```
 <br>
+
+**Do** prefer flex for layout over floats that act like grids.
+
+```css
+/* Avoid */
+.namepace-ClassName {
+  float: right;
+}
+.namespace-ClassName::after {
+  /* Hacks to make floats act like a grid */
+}
+
+/* Correct */
+.namepace-ClassName {
+  display: flex;
+}
+```
