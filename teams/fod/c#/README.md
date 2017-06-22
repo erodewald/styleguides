@@ -4,7 +4,7 @@ Sitemap:
   * [Naming Conventions](#NamingConventions)
   * [Coding Style](#CodingStyle)
     * [Braces](#Braces)
-    * [Classes](#Classes)
+    * [General](#General)
     * [Indentation](#Indentation)
 <br>
 
@@ -112,7 +112,7 @@ public void Example() {
 ```
 <br>
 
-### Classes<a name="Classes"></a>
+### General<a name="General"></a>
 
 **Do** wrap constructor and method parameters when there are more than two parameters.
 
