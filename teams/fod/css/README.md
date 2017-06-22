@@ -4,7 +4,7 @@ CSS extension languages such as Sass fall under the CSS coding standards.
 
 Sitemap:
   * [Naming Conventions](#NamingConventions)
-  * [Coding Style](#NamingConventions)
+  * [Coding Style](#CodingStyle)
 <br>
 
 ## Naming Conventions<a name="NamingConventions"></a>
@@ -18,13 +18,17 @@ $main-font: Arial;
 ```
 <br>
 
-**Do** use _snake-camelCase\__double spinal\__camelCase--double snake_ for class names.
+**Do** use _snake-PascalCase\_\_double spinal\_\_PascalCase--double snake_ for class names. Esentially BEM notation with slight modification.
 
 ```css
-/* Idea here is namespace-component_subcomponent--modifier */
+/* Idea here is namespace-component__subcomponent--modifier */
 
-.calendar-day_
+.calendar-Day__ClassName {}
+.calendar-Day__ClassName--active {}
+
+/* Why? To avoid nesting and let CSS be CSS. We don't want to get into specificity wars. */
 ```
+<br>
 
 **Do** use _PascalCase_ for Id selectors. These should be extremely rare.
 
@@ -44,6 +48,12 @@ $main-font: Arial;
 
 ## Coding Style<a name="CodingStyle"></a>
 
+**Do** end each file with an empty line.
+```css
+.namespace-Selector {}
+/* Empty line here after final selector */
+```
+
 **Avoid** the `#` and `*` selector.
 
 ```css
@@ -52,8 +62,8 @@ $main-font: Arial;
 * {}
 
 /* Correct */
-.class-date {}
-.more-specific-selector {}
+.calendar-ClassDate {}
+.namespace-SomeMoreSpecificSelector {}
 ```
 <br>
 
@@ -66,7 +76,7 @@ $main-font: Arial;
 .first-level .second-level .third-level {}
 
 /* Correct */
-.targetted-class-selector {}
+.namespace-TargetedClassSelector {}
 
 
 /* In .scss */
@@ -79,7 +89,7 @@ $main-font: Arial;
 }
 
 /* Correct */
-.targetted-class-selector {}
+.namespace-TargetedClassSelector {}
 ```
 <br>
 
@@ -87,8 +97,26 @@ $main-font: Arial;
 
 ```css
 /* No. */
-.i-win {
+.i-Win {
   display: flex !important;
+}
+```
+<br>
+
+**Do not** write vendor prefixes. Let a tool do that work.
+
+```css
+.calendar {
+  /* Avoid */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+
+  /* Correct */
+  display: flex;
+
+  /* Use a tool such as autoprefixer to add the vendor prefixes automatically. */
 }
 ```
 <br>
