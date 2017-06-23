@@ -18,7 +18,7 @@ $main-font: Arial;
 ```
 <br>
 
-**Do** use _snake-PascalCase\_\_double spinal\_\_PascalCase--double snake_ for class names. Esentially BEM notation with slight modification.
+**Do** use _snake-PascalCase\_\_double spinal\_\_PascalCase--double snake_ for class names. See [Enduring CSS](http://ecss.io/chapter5.html) for where the convention comes from.
 
 ```css
 /* Idea here is namespace-Component__Subcomponent--modifier */
@@ -136,5 +136,14 @@ $main-font: Arial;
 /* Correct */
 .namepace-ClassName {
   display: flex;
+}
+```
+
+**Do** comment things like browser hacks.
+
+```css
+/* IE6 and IE7 hack */
+.namespace-OldBrowser { 
+  *color: #000000; 
 }
 ```
