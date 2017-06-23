@@ -9,14 +9,14 @@ Sitemap:
 
 ## Naming Conventions<a name="NamingConventions"></a>
 
-**Do** use _period seperated_ for files. All lowercase with periods as seperators.
+**DO** use _period seperated_ for files. All lowercase with periods as seperators.
 
 ```typescript
 // File name: setup.env.ts
 ```
 <br>
 
-**Do** use _PascalCase_ for classes or functions meant to be instantiated with the _new_ keyword.
+**DO** use _PascalCase_ for classes or functions meant to be instantiated with the _new_ keyword.
 
  ```typescript
 // TypeScript
@@ -31,7 +31,7 @@ var instance = new ThisWillBeNewed()
  ```
 <br>
 
-**Do** use _camelCase_ for local variables, methods and functions.
+**DO** use _camelCase_ for local variables, methods and functions.
 
 ```typescript
 var firstName = 'Example';
@@ -46,14 +46,14 @@ function getLocation() {
 ```
 <br>
 
-**Do** use _SCREAMING_SNAKE_CASE_ for constants.
+**DO** use _SCREAMING_SNAKE_CASE_ for constants.
 
 ```typescript
 const VIDEO_CALORIES = 278
 ```
 <br>
 
-**Do** capitalize abbreviations such as XML and ID.
+**DO** capitalize abbreviations such as XML and ID.
 
 ```typescript
 var userID = 1
@@ -62,7 +62,7 @@ var userID = 1
 
 ## Coding Style<a name="CodingStyle"></a>
 
-**Do** end each file with an empty line.
+**DO** end each file with an empty line.
 
 ```typescript
 const userID = 1
@@ -71,7 +71,7 @@ let isActive = true
 ```
 <br>
 
-**Do** preface a comment with an empty space.
+**DO** preface a comment with an empty space.
 
 ```typescript
 // Avoid
@@ -82,7 +82,7 @@ let isActive = true
 ```
 <br>
 
-**Do** prefer _let_ and _const_ over _var_ where possible. There is no magic hoisting when the _let_ keyword is used.
+**DO** prefer _let_ and _const_ over _var_ where possible. There is no magic hoisting when the _let_ keyword is used.
 
 ```typescript
 // Avoid
@@ -94,7 +94,7 @@ let isActive = true
 ```
 <br>
 
-**Avoid** the function keyword. It's not hot anymore.
+**AVOID** the function keyword. It's not hot anymore.
 
 ```typescript
 // Avoid
@@ -107,7 +107,7 @@ deactiveUser(() => {
 ```
 <br>
 
-**Do** alphabatize imports.
+**DO** alphabatize imports.
 
 ```typescript
 // Avoid
@@ -122,7 +122,7 @@ import * as express from 'express'
 ```
 <br>
 
-**Do** prefer automatic assignment of constructor properties in TypeScript.
+**DO** prefer automatic assignment of constructor properties in TypeScript.
 
 ```typescript
 // Avoid
@@ -144,7 +144,7 @@ class Instructor {
 ```
 <br>
 
-**Do** wrap constructor and method parameters when there are more than two parameters.
+**DO** wrap constructor and method parameters when there are more than two parameters.
 
 ```typescript
 public class Person {
@@ -163,7 +163,7 @@ public class Location {
 ```
 <br>
 
-**Do** use the _this_ keyword when working inside objects.
+**DO** use the _this_ keyword when working inside objects.
 
 ```typescript
 public class Equipment {
@@ -177,7 +177,7 @@ public class Equipment {
 ```
 <br>
 
-**Do** use single quotes over double quotes.
+**DO** use single quotes over double quotes.
 
 ```typescript
 // Avoid
@@ -188,7 +188,7 @@ let brand = 'Yoga Fit'
 ```
 <br>
 
-**Avoid** using semicolons in TypeScript.
+**AVOID** using semicolons in TypeScript.
 
 ```typescript
 // Avoid
