@@ -3,9 +3,6 @@
 Sitemap:
   * [Naming Conventions](#NamingConventions)
   * [Coding Style](#CodingStyle)
-    * [Braces](#Braces)
-    * [General](#General)
-    * [Indentation](#Indentation)
 <br>
 
 ## Naming Conventions<a name="NamingConventions"></a>
@@ -87,8 +84,6 @@ public interface IPerson {
 
 ## Coding Style<a name="CodingStyle"></a>
 
-### Braces<a name="Braces"></a>
-
 **Do** use _1TBS_ (one true brace style).
 
 ```csharp
@@ -111,8 +106,6 @@ public void Example() {
 }
 ```
 <br>
-
-### General<a name="General"></a>
 
 **Do** wrap constructor and method parameters when there are more than two parameters.
 
@@ -154,8 +147,6 @@ public class Instructor() {
 }
 ```
 <br>
-
-### Indentation<a name="Indentation"></a>
 
 **Do** wrap chained linq calls on a new indented line.
 
