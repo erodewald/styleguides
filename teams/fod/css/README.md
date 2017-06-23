@@ -9,7 +9,7 @@ Sitemap:
 
 ## Naming Conventions<a name="NamingConventions"></a>
 
-**Do** use _spinal-case_ for file names and variables.
+**DO** use _spinal-case_ for file names and variables.
 
 ```css
 /* File location-schedule.scss */
@@ -18,7 +18,7 @@ $main-font: Arial;
 ```
 <br>
 
-**Do** use _snake-PascalCase\_\_double spinal\_\_PascalCase--double snake_ for class names. See [Enduring CSS](http://ecss.io/chapter5.html) for where the convention comes from.
+**DO** use _snake-PascalCase\_\_double spinal\_\_PascalCase--double snake_ for class names. See [Enduring CSS](http://ecss.io/chapter5.html) for where the convention comes from.
 
 ```css
 /* Idea here is namespace-Component__Subcomponent--modifier */
@@ -30,14 +30,14 @@ $main-font: Arial;
 ```
 <br>
 
-**Do** use _PascalCase_ for Id selectors. **These should be extremely rare**.
+**DO** use _PascalCase_ for Id selectors. **These should be extremely rare**.
 
 ```css
 #ScheduleDate {}
 ```
 <br>
 
-**Do** prefix an `_` to components (files that are meant to be imported).
+**DO** prefix an `_` to components (files that are meant to be imported).
 
 ```css
 /* File schedule.scss */
@@ -48,14 +48,14 @@ $main-font: Arial;
 
 ## Coding Style<a name="CodingStyle"></a>
 
-**Do** end each file with an empty line.
+**DO** end each file with an empty line.
 ```css
 .namespace-Selector {}
 /* Empty line here after final selector */
 ```
 <br>
 
-**Avoid** the `#` and `*` selector.
+**AVOID** the `#` and `*` selector.
 
 ```css
 /* Avoid */
@@ -68,7 +68,7 @@ $main-font: Arial;
 ```
 <br>
 
-**Avoid** nesting beyond one level. It is preferrable that you NEVER nest.
+**AVOID** nesting beyond one level. It is preferrable that you NEVER nest.
 
 ```css
 /* In .css */
@@ -94,7 +94,7 @@ $main-font: Arial;
 ```
 <br>
 
-**Do not** use the keyword `!important`.
+**DO NOT** use the keyword `!important`.
 
 ```css
 /* No. */
@@ -106,7 +106,7 @@ $main-font: Arial;
 
 Why? _!important_ trumps everything and is only overridden by _!important_. It becomes a pain to modify the styles of another class on a given element that is using _!important_. No nesting and avoiding _!important_ allows easier modification due to not having to worry about specifity.
 
-**Do not** write vendor prefixes. Let a tool do that work.
+**DO NOT** write vendor prefixes. Let a tool do that work.
 
 ```css
 .calendar {
@@ -124,7 +124,7 @@ Why? _!important_ trumps everything and is only overridden by _!important_. It b
 ```
 <br>
 
-**Do** prefer flex for layout over floats that act like grids.
+**DO** prefer flex for layout over floats that act like grids.
 
 ```css
 /* Avoid */
@@ -142,7 +142,7 @@ Why? _!important_ trumps everything and is only overridden by _!important_. It b
 ```
 <br>
 
-**Do** comment things like browser hacks.
+**DO** comment things like browser hacks.
 
 ```css
 /* IE6 and IE7 hack */
