@@ -138,6 +138,7 @@ $main-font: Arial;
   display: flex;
 }
 ```
+<br>
 
 **Do** comment things like browser hacks.
 
@@ -147,3 +148,4 @@ $main-font: Arial;
   *color: #000000; 
 }
 ```
+<br>
