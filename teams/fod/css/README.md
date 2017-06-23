@@ -104,6 +104,8 @@ $main-font: Arial;
 ```
 <br>
 
+Why? _!important_ trumps everything and is only overridden by _!important_. It becomes a pain to modify the styles of another class on a given element that is using _!important_. No nesting and avoiding _!important_ allows easier modification due to not having to worry about specifity.
+
 **Do not** write vendor prefixes. Let a tool do that work.
 
 ```css
