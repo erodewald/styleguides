@@ -3,14 +3,11 @@
 Sitemap:
   * [Naming Conventions](#NamingConventions)
   * [Coding Style](#CodingStyle)
-    * [Braces](#Braces)
-    * [General](#General)
-    * [Indentation](#Indentation)
 <br>
 
 ## Naming Conventions<a name="NamingConventions"></a>
 
-**Do** use _PascalCase_ for files, classes, public class methods and properties.
+**DO** use _PascalCase_ for files, classes, public class methods and properties.
 
 ```csharp
 // File name: Location.cs
@@ -24,7 +21,7 @@ public class Location {
 ```
 <br>
 
-**Do** use _camelCase_ for local variables and private class properties.
+**DO** use _camelCase_ for local variables and private class properties.
 
 ```csharp
 public class Instructor {
@@ -37,7 +34,7 @@ public class Instructor {
 ```
 <br>
 
-**Do** use _SCREAMING_SNAKE_CASE_ for constants.
+**DO** use _SCREAMING_SNAKE_CASE_ for constants.
 
 ```csharp
 public void Dumbbell() {
@@ -46,7 +43,7 @@ public void Dumbbell() {
 ```
 <br>
 
-**Do not** prefix or postfix an underscore to anything anywhere.
+**DO NOT** prefix or postfix an underscore to anything anywhere.
 
 ```csharp
 public class User {
@@ -59,7 +56,7 @@ public class User {
 ```
 <br>
 
-**Do** spell out linq statement variables.
+**DO** spell out linq statement variables.
 
 ```csharp
 public User LinqExample(List<User> users) {
@@ -68,7 +65,7 @@ public User LinqExample(List<User> users) {
 ```
 <br>
 
-**Do** capitalize abbreviations such as XML and ID.
+**DO** capitalize abbreviations such as XML and ID.
 
 ```csharp
 public class Equipment {
@@ -77,7 +74,7 @@ public class Equipment {
 ```
 <br>
 
-**Do** prefix an I to interfaces.
+**DO** prefix an I to interfaces.
 
 ```csharp
 public interface IPerson {
@@ -87,9 +84,7 @@ public interface IPerson {
 
 ## Coding Style<a name="CodingStyle"></a>
 
-### Braces<a name="Braces"></a>
-
-**Do** use _1TBS_ (one true brace style).
+**DO** use _1TBS_ (one true brace style).
 
 ```csharp
 // Note the one space before the brace.
@@ -101,7 +96,7 @@ public class Equipment {
 ```
 <br>
 
-**Do** wrap single line if statements in braces.
+**DO** wrap single line if statements in braces.
 
 ```csharp
 public void Example() {
@@ -112,27 +107,29 @@ public void Example() {
 ```
 <br>
 
-### General<a name="General"></a>
-
-**Do** wrap constructor and method parameters when there are more than two parameters.
+**DO** wrap constructor and method parameters when there are more than two parameters.
 
 ```csharp
-public class Person(
-  string firstName,
-  string lastName,
-  string address
-) {
+public class Person {
+  public Person(
+    string firstName,
+    string lastName,
+    string address
+  ) {
+  }
 }
 
-public class Location(string address, int managerID) {
+public class Location {
+  public Location(string address, int managerID) {
+  }
 }
 ```
 <br>
 
-**Do** prefer fields for private class variables.
+**DO** prefer fields for private class variables.
 
 ```csharp
-public class Account() {
+public class Account {
   // Correct
   private bool isDeleted;
 
@@ -142,10 +139,10 @@ public class Account() {
 ```
 <br>
 
-**Do** prefer properties for public class variables.
+**DO** prefer properties for public class variables.
 
 ```csharp
-public class Instructor() {
+public class Instructor {
   // Correct
   public string FirstName { get; set; }
 
@@ -155,9 +152,26 @@ public class Instructor() {
 ```
 <br>
 
-### Indentation<a name="Indentation"></a>
+**AVOID** using the keyword _this_.
 
-**Do** wrap chained linq calls on a new indented line.
+```csharp
+public class Brand {
+  private string name;
+  private string address;
+
+  // Correct
+  public GetName() {
+    return name;
+  }
+
+  // Avoid
+  public GetAddress() {
+    return this.name;
+  }
+}
+```
+
+**DO** wrap chained linq calls on a new indented line.
 
 ```csharp
 public void Example(IEnumerable<Users> users) {
