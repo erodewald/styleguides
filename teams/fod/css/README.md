@@ -9,7 +9,7 @@ Sitemap:
 
 ## Naming Conventions<a name="NamingConventions"></a>
 
-**Do** use _spinal_case_ for file names and variables.
+**Do** use _spinal-case_ for file names and variables.
 
 ```css
 /* File location-schedule.scss */
