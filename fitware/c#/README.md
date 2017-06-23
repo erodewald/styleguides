@@ -73,7 +73,7 @@ protected void Find(string searchCriteria)
 }
 ```
 
-**DO** use _Camel Case_ for local and private properties
+**DO** use _Camel Case_ for local and private properties (TODO: _'s?)
 ```csharp
 public class Equipment
 {
