@@ -10,6 +10,7 @@ These rules help enforce the Sass standards.
 
 1. Install [Sass Lint](https://marketplace.visualstudio.com/items?itemName=glen-84.sass-lint).
 2. Add `.sass-lint.yml` to the root of your project.
+3. Add `"editor.formatOnSave": true` to your `settings.json` file.
 
 ### WebStorm
 
