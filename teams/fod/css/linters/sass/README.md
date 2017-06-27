@@ -8,14 +8,8 @@ These rules help enforce the Sass standards.
 
 ### Visual Studio Code
 
-1. Install [Sass Lint](https://marketplace.visualstudio.com/items?itemName=glen-84.sass-lint).
+1. Install [Sass Lint](https://marketplace.visualstudio.com/items?itemName=glen-84.sass-lint) extension.
 2. Add `.sass-lint.yml` to the root of your project.
-3. Enable format on save in your `settings.json` file.
-```json
-{
-  "editor.formatOnSave": true
-}
-```
 
 ### WebStorm
 
