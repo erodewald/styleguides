@@ -1,4 +1,4 @@
-# Lift Brands TypeScript Linter Rules
+# FOD Team TypeScript Linter Rules
 
 These rules help enforce the TypeScript standards.
 

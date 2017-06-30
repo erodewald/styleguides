@@ -1,4 +1,4 @@
-# Lift Brands Sass Linter Rules
+# FOD Team Sass Linter Rules
 
 These rules help enforce the Sass standards.
 
