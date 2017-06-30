@@ -4,7 +4,7 @@ These rules help enforce the TypeScript standards.
 
 ## IDE Linter Setup
 
-1. Follow [TSLint's](https://palantir.github.io/tslint/usage/cli/) installation instructions.
+Follow [TSLint's](https://palantir.github.io/tslint/usage/cli/) installation instructions.
 
 ### Visual Studio Code
 

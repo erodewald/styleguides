@@ -4,7 +4,7 @@ These rules help enforce the Sass standards.
 
 ## IDE Linter Setup
 
-1. Follow [sass-lint](https://github.com/sasstools/sass-lint) installation instructions.
+Follow [sass-lint](https://github.com/sasstools/sass-lint) installation instructions.
 
 ### Visual Studio Code
 
