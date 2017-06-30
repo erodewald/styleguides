@@ -1,0 +1,36 @@
+# https://github.com/sasstools/sass-lint
+
+options:
+  max-warnings: 25
+  merge-default-rules: true
+files:
+  include: 'styles/**/*.scss'
+rules:
+  brace-style:
+  - 1
+  -
+    allow-single-line: false
+  indentation:
+  - 1
+  -
+    size: 2
+  nesting-depth:
+  - 1
+  -
+    max-depth: 1
+  no-combinators: 1
+  no-debug: 1
+  no-empty-rulesets: 1
+  no-ids: 2
+  no-important: 2
+  no-invalid-hex: true
+  no-qualifying-elements:
+  - 2
+  -
+    allow-element-with-attribute: true
+  no-trailing-whitespace: 1
+  no-trailing-zero: 1
+  no-universal-selectors: 2
+  no-vendor-prefixes: 2
+  one-declaration-per-line: 1
+  single-line-per-selector: 1
