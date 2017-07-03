@@ -1,4 +1,4 @@
-# FOD Team CSS Coding Standards {
+# FOD Team CSS Standards {
 
 Sitemap:
   * [Naming Conventions](#NamingConventions)
