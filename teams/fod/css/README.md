@@ -1,6 +1,4 @@
-# FOD Team CSS Coding Standards
-
-CSS extension languages such as Sass fall under the CSS coding standards.
+# FOD Team CSS Coding Standards {
 
 Sitemap:
   * [Naming Conventions](#NamingConventions)
@@ -9,12 +7,10 @@ Sitemap:
 
 ## Naming Conventions<a name="NamingConventions"></a>
 
-**DO** use _spinal-case_ for file names and variables.
+**DO** use _spinal-case_ for file names.
 
 ```css
 /* File location-schedule.scss */
-
-$main-font: Arial;
 ```
 <br>
 
@@ -34,15 +30,6 @@ $main-font: Arial;
 
 ```css
 #ScheduleDate {}
-```
-<br>
-
-**DO** prefix an `_` to components (files that are meant to be imported).
-
-```css
-/* File schedule.scss */
-
-@import "_schedule-calendar.scss";
 ```
 <br>
 
@@ -71,23 +58,8 @@ $main-font: Arial;
 **AVOID** nesting beyond one level. It is preferrable that you NEVER nest.
 
 ```css
-/* In .css */
-
 /* Avoid */
 .first-level .second-level .third-level {}
-
-/* Correct */
-.namespace-TargetedClassSelector {}
-
-
-/* In .scss */
-
-/* Avoid */
-.first-level {
-  .second-level {
-    .third-level {}
-  }
-}
 
 /* Correct */
 .namespace-TargetedClassSelector {}
@@ -151,3 +123,23 @@ Why? _!important_ trumps everything and is only overridden by _!important_. It b
 }
 ```
 <br>
+
+**DO** order properties alphabetically. Makes it easier to wade through.
+
+```css
+/* Avoid */
+.location-Description {
+  width: 125px;
+  color: #000000;
+  margin: 0 0 15px;
+}
+
+/* Good */
+.location-Description {
+  color: #000000;
+  margin: 0 0 15px;
+  width: 125px;
+}
+```
+
+# }

@@ -1,10 +1,7 @@
-root = true
+# FOD Team Editor Config Rules
 
-[*]
-charset = utf-8
-indent_size = 4
-indent_style = space
-insert_final_newline = true
-trim_trailing_whitespace = true
+Editor config is a document formatter that help ensure consistent style.
 
+## IDE Setup
 
+Just add the file to your project root. Nearly all popular IDE's support `.editorconfig` files.
