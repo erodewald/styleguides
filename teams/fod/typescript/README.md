@@ -31,15 +31,4 @@ class Instructor {
 ```
 <br>
 
-**AVOID** using semicolons.
-
-```typescript
-// Avoid
-let gymName = 'Snap Fitness';
-
-// Correct
-let gymName = 'Snap Fitness'
-```
-<br>
-
 # }
