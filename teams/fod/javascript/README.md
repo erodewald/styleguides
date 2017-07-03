@@ -188,14 +188,46 @@ let brand = 'Yoga Fit';
 ```
 <br>
 
-**AVOID** using semicolons in TypeScript.
+**DO** end statements with semicolons.
 
-```typescript
+```javascript
 // Avoid
-let gymName = 'Snap Fitness';
+let gymName = 'Snap Fitness'
 
 // Correct
-let gymName = 'Snap Fitness'
+let gymName = 'Snap Fitness';
+```
+<br>
+
+**DO** properly space out operator statements.
+
+```javascript
+// Avoid
+let result = 5+5;
+let result = 5 +5;
+let result = 5+ 5;
+
+// Correct
+let result = 5 + 5;
+```
+<br>
+
+**DO** properly space out if statements.
+
+```javascript
+// Avoid
+if(5<10){
+  // ...
+}
+
+if (5 <10){
+  // ...
+}
+
+// Correct
+if (5 < 10) {
+
+}
 ```
 <br>
 

@@ -141,5 +141,20 @@ Why? _!important_ trumps everything and is only overridden by _!important_. It b
   width: 125px;
 }
 ```
+<br>
+
+**AVOID** prefixing and postfixing property values with zeros.
+
+```css
+/* Avoid */
+.location-Name {
+  font-size: 0.0250rem;
+}
+
+/* Good */
+.location-Name {
+  font-size: .025rem;
+}
+```
 
 # }
