@@ -1,7 +1,5 @@
 # FOD Team JavaScript Coding Standards
 
-JavaScript extension languages such as TypeScript fall under the JavaScript coding standards.
-
 Sitemap:
   * [Naming Conventions](#NamingConventions)
   * [Coding Style](#CodingStyle)
@@ -9,18 +7,18 @@ Sitemap:
 
 ## Naming Conventions<a name="NamingConventions"></a>
 
-**DO** use _period seperated_ for files. All lowercase with periods as seperators.
+**DO** use _period hyphen_ seperation for files.
 
-```typescript
-// File name: setup.env.ts
+```javascript
+// File name: setup.env-setup.js
 ```
-<br>
+<br
 
 **DO** use _PascalCase_ for classes or functions meant to be instantiated with the _new_ keyword.
 
- ```typescript
-// TypeScript
-public class Instructor {
+ ```javascript
+// ES6
+class Instructor {
 }
 
 // ES5
@@ -33,10 +31,10 @@ var instance = new ThisWillBeNewed()
 
 **DO** use _camelCase_ for local variables, methods and functions.
 
-```typescript
+```javascript
 var firstName = 'Example';
 
-public class Location {
+class Location {
   getNextScheduledVideo() {
   }
 }
@@ -48,14 +46,14 @@ function getLocation() {
 
 **DO** use _SCREAMING_SNAKE_CASE_ for constants.
 
-```typescript
+```javascript
 const VIDEO_CALORIES = 278
 ```
 <br>
 
 **DO** capitalize abbreviations such as XML and ID.
 
-```typescript
+```javascript
 var userID = 1
 ```
 <br>
@@ -64,16 +62,16 @@ var userID = 1
 
 **DO** end each file with an empty line.
 
-```typescript
+```javascript
 const userID = 1
 let isActive = true
-// Note the new line here
+↵
 ```
 <br>
 
 **DO** preface a comment with an empty space.
 
-```typescript
+```javascript
 // Avoid
 //Some comment
 
@@ -84,19 +82,19 @@ let isActive = true
 
 **DO** prefer _let_ and _const_ over _var_ where possible. There is no magic hoisting when the _let_ keyword is used.
 
-```typescript
+```javascript
 // Avoid
-var userID = 1
+var userID = 1;
 
 // Correct
-const userID = 1
-let isActive = true
+const userID = 1;
+let isActive = true;
 ```
 <br>
 
 **AVOID** the function keyword. It's not hot anymore.
 
-```typescript
+```javascript
 // Avoid
 deactiveUser(function() {
 })
@@ -109,7 +107,7 @@ deactiveUser(() => {
 
 **DO** alphabatize imports.
 
-```typescript
+```javascript
 // Avoid
 import * as express from 'express'
 import * as bodyParser from 'body-parser'
