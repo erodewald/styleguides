@@ -7,7 +7,7 @@ Sitemap:
 
 ## Naming Conventions<a name="NamingConventions"></a>
 
-**DO** use _period hyphen_ seperation for files.
+**DO** use _period hyphen_ separation for files.
 
 ```javascript
 // File name: setup.env-setup.js
