@@ -31,4 +31,19 @@ class Instructor {
 ```
 <br>
 
+**DO** prefix interface names with "I".
+
+```typescript
+// Avoid
+public interface Facility {
+  // ...
+}
+
+// Correct
+public interface IFacility {
+  // ...
+}
+```
+<br>
+
 # }
