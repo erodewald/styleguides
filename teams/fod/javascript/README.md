@@ -146,9 +146,9 @@ import * as express from 'express'
 ```javascript
 class Person {
   constructor(
-    firstName: string,
-    lastName: string,
-    address: string
+    firstName,
+    lastName,
+    address
   ) {
     // ...
   }
