@@ -12,7 +12,7 @@ Sitemap:
 ```javascript
 // File name: setup.env-setup.js
 ```
-<br
+<br>
 
 **DO** use _PascalCase_ for classes or functions meant to be instantiated with the _new_ keyword.
 
