@@ -1,4 +1,4 @@
-# FOD Team Sass Coding Standards _extends_ <a href="../css/README.md">FOD Team CSS Coding Standards</a> {
+# FOD Team Sass Standards _extends_ <a href="../css/README.md">FOD Team CSS Standards</a> {
 
 Sitemap:
   * [Naming Conventions](#NamingConventions)
