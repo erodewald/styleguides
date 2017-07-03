@@ -156,5 +156,21 @@ Why? _!important_ trumps everything and is only overridden by _!important_. It b
   font-size: .025rem;
 }
 ```
+<br>
+
+**DO** properly space out properies.
+
+```css
+/* Avoid */
+.location-Description {
+  vertical-align:middle;
+}
+
+/* Good */
+.location-Name {
+  vertical-align: middle;
+}
+```
+<br>
 
 # }
