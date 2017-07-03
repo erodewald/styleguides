@@ -1,4 +1,4 @@
-# FOD Team TypeScript Coding Standards _extends_ <a href="../javascript/README.md">FOD Team JavaScript Coding Standards</a> {
+# class FOD Team TypeScript Coding Standards _extends_ <a href="../javascript/README.md">FOD Team JavaScript Coding Standards</a> {
 
 Sitemap:
   * [Naming Conventions](#NamingConventions)
@@ -9,8 +9,7 @@ Sitemap:
 
 ## Coding Style<a name="CodingStyle"></a>
 
-
-**DO** prefer automatic assignment of constructor properties in TypeScript.
+**DO** prefer automatic assignment of constructor properties.
 
 ```typescript
 // Avoid
@@ -32,4 +31,15 @@ class Instructor {
 ```
 <br>
 
-# };
+**AVOID** using semicolons.
+
+```typescript
+// Avoid
+let gymName = 'Snap Fitness';
+
+// Correct
+let gymName = 'Snap Fitness'
+```
+<br>
+
+# }

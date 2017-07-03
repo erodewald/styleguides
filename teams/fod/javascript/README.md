@@ -1,4 +1,4 @@
-# FOD Team JavaScript Coding Standards
+# class FOD Team JavaScript Coding Standards {
 
 Sitemap:
   * [Naming Conventions](#NamingConventions)
@@ -25,7 +25,7 @@ class Instructor {
 function ThisWillBeNewed() {
 }
 // ...
-var instance = new ThisWillBeNewed()
+var instance = new ThisWillBeNewed();
  ```
 <br>
 
@@ -44,17 +44,38 @@ function getLocation() {
 ```
 <br>
 
+**AVOID** prefixing variables with `_`.
+
+```javascript
+let brand = (() => {
+  // Good
+  let brandTitle = 'Fitness On Demand 24/7';
+
+  // Bad
+  let _brandTitle = 'Fitness On Demand 24/7';
+
+  getBrandTitle() {
+    return privateVariable;
+  }
+
+  return {
+    getBrandTitle
+  };
+})()
+```
+<br>
+
 **DO** use _SCREAMING_SNAKE_CASE_ for constants.
 
 ```javascript
-const VIDEO_CALORIES = 278
+const VIDEO_CALORIES = 278;
 ```
 <br>
 
 **DO** capitalize abbreviations such as XML and ID.
 
 ```javascript
-var userID = 1
+var userID = 1;
 ```
 <br>
 
@@ -63,8 +84,8 @@ var userID = 1
 **DO** end each file with an empty line.
 
 ```javascript
-const userID = 1
-let isActive = true
+const userID = 1;
+let isActive = true;
 ↵
 ```
 <br>
@@ -120,42 +141,22 @@ import * as express from 'express'
 ```
 <br>
 
-**DO** prefer automatic assignment of constructor properties in TypeScript.
-
-```typescript
-// Avoid
-class Instructor {
-  private firstName: string
-  private lastName: string
-
-  constructor(firstName: string, lastName: string) {
-    this.firstName = firstName
-    this.lastName = lastName
-  }
-}
-
-// Correct
-class Instructor {
-  constructor(private firstName: string, private lastName: string) {
-  }
-}
-```
-<br>
-
 **DO** wrap constructor and method parameters when there are more than two parameters.
 
-```typescript
-public class Person {
+```javascript
+class Person {
   constructor(
-    private firstName: string,
-    private lastName: string,
-    private address: string
+    firstName: string,
+    lastName: string,
+    address: string
   ) {
+    // ...
   }
 }
 
-public class Location {
-  constructor(private address: string, private managerID: int) {
+class Location {
+  constructor(address, managerID) {
+    // ...
   }
 }
 ```
@@ -163,13 +164,14 @@ public class Location {
 
 **DO** use the _this_ keyword when working inside objects.
 
-```typescript
-public class Equipment {
-  constructor(private name: string) {
+```javascript
+class Equipment {
+  constructor(name) {
+    this.name = name;
   }
 
   getName() {
-    return this.name
+    return this.name;
   }
 }
 ```
@@ -177,12 +179,12 @@ public class Equipment {
 
 **DO** use single quotes over double quotes.
 
-```typescript
+```javascript
 // Avoid
-let brand = "Yoga Fit"
+let brand = "Yoga Fit";
 
 // Correct
-let brand = 'Yoga Fit'
+let brand = 'Yoga Fit';
 ```
 <br>
 
@@ -196,3 +198,5 @@ let gymName = 'Snap Fitness';
 let gymName = 'Snap Fitness'
 ```
 <br>
+
+# }
