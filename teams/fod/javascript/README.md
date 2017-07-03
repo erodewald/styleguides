@@ -1,6 +1,4 @@
-# FOD Team JavaScript Coding Standards
-
-JavaScript extension languages such as TypeScript fall under the JavaScript coding standards.
+# class FOD Team JavaScript Standards {
 
 Sitemap:
   * [Naming Conventions](#NamingConventions)
@@ -9,34 +7,34 @@ Sitemap:
 
 ## Naming Conventions<a name="NamingConventions"></a>
 
-**DO** use _period seperated_ for files. All lowercase with periods as seperators.
+**DO** use _period hyphen_ separation for files.
 
-```typescript
-// File name: setup.env.ts
+```javascript
+// File name: setup.env-setup.js
 ```
 <br>
 
 **DO** use _PascalCase_ for classes or functions meant to be instantiated with the _new_ keyword.
 
- ```typescript
-// TypeScript
-public class Instructor {
+ ```javascript
+// ES6
+class Instructor {
 }
 
 // ES5
 function ThisWillBeNewed() {
 }
 // ...
-var instance = new ThisWillBeNewed()
+var instance = new ThisWillBeNewed();
  ```
 <br>
 
 **DO** use _camelCase_ for local variables, methods and functions.
 
-```typescript
+```javascript
 var firstName = 'Example';
 
-public class Location {
+class Location {
   getNextScheduledVideo() {
   }
 }
@@ -46,17 +44,38 @@ function getLocation() {
 ```
 <br>
 
+**AVOID** prefixing variables with `_`.
+
+```javascript
+let brand = (() => {
+  // Good
+  let brandTitle = 'Fitness On Demand 24/7';
+
+  // Bad
+  let _brandTitle = 'Fitness On Demand 24/7';
+
+  getBrandTitle() {
+    return privateVariable;
+  }
+
+  return {
+    getBrandTitle
+  };
+})()
+```
+<br>
+
 **DO** use _SCREAMING_SNAKE_CASE_ for constants.
 
-```typescript
-const VIDEO_CALORIES = 278
+```javascript
+const VIDEO_CALORIES = 278;
 ```
 <br>
 
 **DO** capitalize abbreviations such as XML and ID.
 
-```typescript
-var userID = 1
+```javascript
+var userID = 1;
 ```
 <br>
 
@@ -64,16 +83,16 @@ var userID = 1
 
 **DO** end each file with an empty line.
 
-```typescript
-const userID = 1
-let isActive = true
-// Note the new line here
+```javascript
+const userID = 1;
+let isActive = true;
+↵
 ```
 <br>
 
 **DO** preface a comment with an empty space.
 
-```typescript
+```javascript
 // Avoid
 //Some comment
 
@@ -84,19 +103,19 @@ let isActive = true
 
 **DO** prefer _let_ and _const_ over _var_ where possible. There is no magic hoisting when the _let_ keyword is used.
 
-```typescript
+```javascript
 // Avoid
-var userID = 1
+var userID = 1;
 
 // Correct
-const userID = 1
-let isActive = true
+const userID = 1;
+let isActive = true;
 ```
 <br>
 
 **AVOID** the function keyword. It's not hot anymore.
 
-```typescript
+```javascript
 // Avoid
 deactiveUser(function() {
 })
@@ -109,7 +128,7 @@ deactiveUser(() => {
 
 **DO** alphabatize imports.
 
-```typescript
+```javascript
 // Avoid
 import * as express from 'express'
 import * as bodyParser from 'body-parser'
@@ -119,45 +138,25 @@ import * as cookieSession from 'cookie-session'
 import * as bodyParser from 'body-parser'
 import * as cookieSession from 'cookie-session'
 import * as express from 'express'
-```
-<br>
-
-**DO** prefer automatic assignment of constructor properties in TypeScript.
-
-```typescript
-// Avoid
-class Instructor {
-  private firstName: string
-  private lastName: string
-
-  constructor(firstName: string, lastName: string) {
-    this.firstName = firstName
-    this.lastName = lastName
-  }
-}
-
-// Correct
-class Instructor {
-  constructor(private firstName: string, private lastName: string) {
-  }
-}
 ```
 <br>
 
 **DO** wrap constructor and method parameters when there are more than two parameters.
 
-```typescript
-public class Person {
+```javascript
+class Person {
   constructor(
-    private firstName: string,
-    private lastName: string,
-    private address: string
+    firstName,
+    lastName,
+    address
   ) {
+    // ...
   }
 }
 
-public class Location {
-  constructor(private address: string, private managerID: int) {
+class Location {
+  constructor(address, managerID) {
+    // ...
   }
 }
 ```
@@ -165,13 +164,14 @@ public class Location {
 
 **DO** use the _this_ keyword when working inside objects.
 
-```typescript
-public class Equipment {
-  constructor(private name: string) {
+```javascript
+class Equipment {
+  constructor(name) {
+    this.name = name;
   }
 
   getName() {
-    return this.name
+    return this.name;
   }
 }
 ```
@@ -179,22 +179,56 @@ public class Equipment {
 
 **DO** use single quotes over double quotes.
 
-```typescript
+```javascript
 // Avoid
-let brand = "Yoga Fit"
+let brand = "Yoga Fit";
 
 // Correct
-let brand = 'Yoga Fit'
+let brand = 'Yoga Fit';
 ```
 <br>
 
-**AVOID** using semicolons in TypeScript.
+**DO** end statements with semicolons.
 
-```typescript
+```javascript
 // Avoid
-let gymName = 'Snap Fitness';
-
-// Correct
 let gymName = 'Snap Fitness'
+
+// Correct
+let gymName = 'Snap Fitness';
 ```
 <br>
+
+**DO** properly space out operator statements.
+
+```javascript
+// Avoid
+let result = 5+5;
+let result = 5 +5;
+let result = 5+ 5;
+
+// Correct
+let result = 5 + 5;
+```
+<br>
+
+**DO** properly space out if statements.
+
+```javascript
+// Avoid
+if(5<10){
+  // ...
+}
+
+if (5 <10){
+  // ...
+}
+
+// Correct
+if (5 < 10) {
+
+}
+```
+<br>
+
+# }
