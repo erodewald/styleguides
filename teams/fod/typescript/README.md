@@ -1,4 +1,4 @@
-# FOD Team TypeScript Coding Standards _extends_ <a href="../javascript/README.md"></a> FOD Team JavaScript Coding Standards {
+# FOD Team TypeScript Coding Standards _extends_ <a href="../javascript/README.md">FOD Team JavaScript Coding Standards</a> {
 
 Sitemap:
   * [Naming Conventions](#NamingConventions)
