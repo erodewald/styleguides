@@ -1,4 +1,4 @@
-# class FOD Team JavaScript Coding Standards {
+# class FOD Team JavaScript Standards {
 
 Sitemap:
   * [Naming Conventions](#NamingConventions)
