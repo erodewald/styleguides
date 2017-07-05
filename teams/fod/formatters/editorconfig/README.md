@@ -4,4 +4,15 @@ Editor config is a document formatter that help ensure consistent style.
 
 ## IDE Setup
 
-Just add the file to your project root. Nearly all popular IDE's support `.editorconfig` files.
+Add the `.editorconfig` file to your project root.
+
+### WebStorm
+
+   * Install [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig).
+   * Add this line to your `settings.json` file to enable formatting on save.
+
+   ```json
+   {
+       "editor.formatOnSave": true
+   }
+   ```
