@@ -1,0 +1,27 @@
+{
+  "extends": [
+    "tslint:recommended"
+  ],
+  "rules": {
+    /* Functionality */
+    "no-console": [
+      false
+    ],
+    /* Maintainability */
+    "prefer-const": [
+      false
+    ],
+    "trailing-comma": [
+      true
+    ],
+    /* Style */
+    "quotemark": [
+      true,
+      "single",
+      "jsx-double"
+    ],
+    "semicolon": [
+      true
+    ]
+  }
+}
