@@ -3,6 +3,7 @@
 Sitemap:
   * [Class layout](#ClassLayout)
   * [Naming Conventions](#NamingConventions)
+  * [Idiomatic use of language features](#IdiomaticUse)
   * [Coding Style](#CodingStyle)
 <br>
 
@@ -88,7 +89,7 @@ class C {
 }
 ```
 
-## Idiotmatic use of language features
+## Idiotmatic use of language features<a name="IdiomaticUse"></a>
 
 ### Default parameter values
 Prefer declaring functions with default parameter values to declaring overloaded functions.
