@@ -1,4 +1,4 @@
-# class FOD Team JavaScript Standards {
+# class JavaScript Standards {
 
 Sitemap:
   * [Naming Conventions](#NamingConventions)
@@ -34,12 +34,12 @@ var instance = new ThisWillBeNewed();
 ```javascript
 var firstName = 'Example';
 
-class Location {
-  getNextScheduledVideo() {
+class User {
+  getActivity() {
   }
 }
 
-function getLocation() {
+function getUser() {
 }
 ```
 <br>
@@ -47,19 +47,19 @@ function getLocation() {
 **AVOID** prefixing variables with `_`.
 
 ```javascript
-let brand = (() => {
+let user = (() => {
   // Good
-  let brandTitle = 'Fitness On Demand 24/7';
+  let firstName = 'Eric';
 
   // Bad
-  let _brandTitle = 'Fitness On Demand 24/7';
+  let _firstName = 'Eric';
 
-  getBrandTitle() {
-    return privateVariable;
+  getFirstName() {
+    return firstName;
   }
 
   return {
-    getBrandTitle
+    getFirstName
   };
 })()
 ```
@@ -68,7 +68,7 @@ let brand = (() => {
 **DO** use _SCREAMING_SNAKE_CASE_ for constants.
 
 ```javascript
-const VIDEO_CALORIES = 278;
+const LAST_ONLINE = 2934293493;
 ```
 <br>
 
@@ -181,10 +181,10 @@ class Equipment {
 
 ```javascript
 // Avoid
-let brand = "Yoga Fit";
+let name = "Eric";
 
 // Correct
-let brand = 'Yoga Fit';
+let name = 'Eric';
 ```
 <br>
 
@@ -192,10 +192,10 @@ let brand = 'Yoga Fit';
 
 ```javascript
 // Avoid
-let gymName = 'Snap Fitness'
+let name = 'Eric'
 
 // Correct
-let gymName = 'Snap Fitness';
+let name = 'Eric';
 ```
 <br>
 

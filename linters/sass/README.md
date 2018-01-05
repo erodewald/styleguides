@@ -1,4 +1,4 @@
-# FOD Team Sass Linter Rules
+# Sass Linter Rules
 
 These rules help enforce the Sass standards.
 

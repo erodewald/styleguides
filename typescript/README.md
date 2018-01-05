@@ -1,4 +1,4 @@
-# class FOD Team TypeScript Standards _extends_ <a href="../javascript/README.md">FOD Team JavaScript Standards</a> {
+# class TypeScript Standards _extends_ <a href="../javascript/README.md">JavaScript Standards</a> {
 
 Sitemap:
   * [Naming Conventions](#NamingConventions)
@@ -13,7 +13,7 @@ Sitemap:
 
 ```typescript
 // Avoid
-class Instructor {
+class User {
   private firstName: string
   private lastName: string
 
@@ -24,7 +24,7 @@ class Instructor {
 }
 
 // Correct
-class Instructor {
+class User {
   constructor(private firstName: string, private lastName: string) {
   }
 }
@@ -35,12 +35,12 @@ class Instructor {
 
 ```typescript
 // Avoid
-public interface Facility {
+public interface User {
   // ...
 }
 
 // Correct
-public interface IFacility {
+public interface IUser {
   // ...
 }
 ```

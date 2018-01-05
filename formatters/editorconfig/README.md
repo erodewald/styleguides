@@ -1,4 +1,4 @@
-# FOD Team Editor Config Rules
+# Editor Config Rules
 
 Editor config is a document formatter that help ensure consistent style.
 

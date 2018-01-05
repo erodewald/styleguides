@@ -1,4 +1,4 @@
-# FOD Team Sass Standards _extends_ <a href="../css/README.md">FOD Team CSS Standards</a> {
+# Sass Standards _extends_ <a href="../css/README.md">CSS Standards</a> {
 
 Sitemap:
   * [Naming Conventions](#NamingConventions)
@@ -10,9 +10,9 @@ Sitemap:
 **DO** prefix an `_` to components (files that are meant to be imported).
 
 ```css
-/* File schedule.scss */
+/* File profile.scss */
 
-@import "_schedule-calendar.scss";
+@import "_profile-calendar.scss";
 ```
 <br>
 

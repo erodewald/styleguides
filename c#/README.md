@@ -1,4 +1,4 @@
-# FOD Team C# Standards
+# C# Standards
 
 Sitemap:
   * [Naming Conventions](#NamingConventions)
@@ -10,12 +10,12 @@ Sitemap:
 **DO** use _PascalCase_ for files, classes, public class methods and properties.
 
 ```csharp
-// File name: Location.cs
+// File name: User.cs
 
-public class Location {
+public class User {
   public DateTime ActivationDate { get; set; }
 
-  public void DeactiveLocation() {
+  public void DeactivateUser() {
   }
 }
 ```
@@ -24,10 +24,10 @@ public class Location {
 **DO** use _camelCase_ for local variables and private class properties.
 
 ```csharp
-public class Instructor {
+public class User {
   private DateTime startDate;
 
-  public int NextAvailableDate() { 
+  public int LastOnline() { 
     var today = DateTime.Now;
   }
 }
@@ -37,8 +37,8 @@ public class Instructor {
 **DO** use _SCREAMING_SNAKE_CASE_ for constants.
 
 ```csharp
-public void Dumbbell() {
-  public const int TOTAL_WEIGHT { get; set; }
+public void User() {
+  public const int TOTAL_LOGINS { get; set; }
 }
 ```
 <br>
@@ -142,7 +142,7 @@ public class Account {
 **DO** prefer properties for public class variables.
 
 ```csharp
-public class Instructor {
+public class User {
   // Correct
   public string FirstName { get; set; }
 
@@ -155,7 +155,7 @@ public class Instructor {
 **AVOID** using the keyword _this_.
 
 ```csharp
-public class Brand {
+public class Location {
   private string name;
   private string address;
 

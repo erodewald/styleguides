@@ -1,4 +1,4 @@
-# FOD Team CSS Standards {
+# CSS Standards {
 
 Sitemap:
   * [Naming Conventions](#NamingConventions)
@@ -128,14 +128,14 @@ Why? _!important_ trumps everything and is only overridden by _!important_. It b
 
 ```css
 /* Avoid */
-.location-Description {
+.user-Description {
   width: 125px;
   color: #000000;
   margin: 0 0 15px;
 }
 
 /* Good */
-.location-Description {
+.user-Description {
   color: #000000;
   margin: 0 0 15px;
   width: 125px;
@@ -147,12 +147,12 @@ Why? _!important_ trumps everything and is only overridden by _!important_. It b
 
 ```css
 /* Avoid */
-.location-Name {
+.user-Name {
   font-size: 0.0250rem;
 }
 
 /* Good */
-.location-Name {
+.user-Name {
   font-size: .025rem;
 }
 ```
@@ -162,12 +162,12 @@ Why? _!important_ trumps everything and is only overridden by _!important_. It b
 
 ```css
 /* Avoid */
-.location-Description {
+.user-Description {
   vertical-align:middle;
 }
 
 /* Good */
-.location-Name {
+.user-Name {
   vertical-align: middle;
 }
 ```
